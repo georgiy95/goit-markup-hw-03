@@ -1,8 +1,35 @@
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
   letter-spacing: 0.02em;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .link {
@@ -17,25 +44,28 @@ ul {
 
 .header {
   list-style: none;
+  border-bottom: 1px solid #e7e9fc;
 }
 
-.header .list {
-  list-style: none;
+.header-cntnr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.link {
-  text-decoration: none;
+.hdr.list {
+  gap: 40px;
 }
 
 .header-studio .link {
-  list-style: none;
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  list-style: none;
-  text-decoration: none;
   color: #2e2f42;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .header-studio .link:hover,
@@ -43,11 +73,12 @@ ul {
   color: #404bbf;
 }
 
-.address-list {
-  font-style: normal;
+.hdr.list {
+  display: flex;
 }
 
 .address .link {
+  display: block;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -60,6 +91,11 @@ ul {
 .address .link:hover,
 .address .link:focus {
   color: #404bbf;
+}
+
+.address.list {
+  display: flex;
+  gap: 24px;
 }
 
 .header-logo {
@@ -79,44 +115,63 @@ ul {
   font-size: 18px;
   line-height: 1.17;
   color: #2e2f42;
+  margin-right: 76px;
 }
 
 /* Головне меню */
+
+.heading {
+  background: #2e2f42;
+}
+
+.heading-baner {
+  font-weight: 700;
+  text-align: center;
+  font-size: 56px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
 
 .heading-caption {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
-}
-
-.heading {
-  background: #2e2f42;
-  font-weight: 700;
-  text-align: center;
-  font-size: 56px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #ffffff;
+  width: 496px;
+  padding-top: 188px;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 
 .heading-btn {
-  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 16px 32px;
   background: #4d5ae5;
-
   color: #ffffff;
+  font-weight: 500;
   cursor: pointer;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  font-weight: 500;
   font-size: 16px;
+  border: 1px;
+  margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
+  margin-bottom: 188px;
 }
 
 .heading-btn:hover,
 .heading-btn:focus {
   background: #404bbf;
+}
+
+.hero .list {
+  display: block;
+  display: flex;
+  gap: 24px;
 }
 
 .aside-btn {
@@ -131,12 +186,36 @@ ul {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   color: #4d5ae5;
+  margin-top: 96px;
+  margin-bottom: 84px;
+}
+
+.section.list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 }
 
 .aside-btn:hover,
 .aside-btn:focus {
   background: #404bbf;
   color: #ffffff;
+}
+
+.hero-heading {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  padding-top: 120px;
+  margin-bottom: 8px;
+}
+
+.hero-paragraph {
+  line-height: 1.5;
+  width: 264px;
+  padding-bottom: 120px;
 }
 
 .headline {
@@ -146,6 +225,11 @@ ul {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+  height: 40px;
+}
+
+.section-background {
+  background: #f4f4fd;
 }
 
 .subtitle {
@@ -156,6 +240,8 @@ ul {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
+  padding-top: 120px;
 }
 
 .subtitle-paragraph {
@@ -165,6 +251,8 @@ ul {
   text-align: center;
   letter-spacing: 0.02em;
   color: #434455;
+  margin-top: 8px;
+  padding-bottom: 32px;
 }
 
 .subtitle-name {
@@ -174,9 +262,15 @@ ul {
   text-align: center;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-top: 32px;
+}
+.main.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
-.main-list-link {
+.main-list.link {
   text-decoration: none;
 }
 
@@ -186,6 +280,9 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-top: 32px;
+  margin-bottom: 8px;
+  margin-left: 16px;
 }
 
 .main-list-app {
@@ -193,6 +290,8 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-bottom: 32px;
+  margin-left: 16px;
 }
 
 .main-photo .list {
@@ -201,9 +300,45 @@ ul {
   background: url(man-with-laptop-presenting-something.jpg);
   mix-blend-mode: normal;
   letter-spacing: 0.02em;
-  flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+.main-photo.list {
+  display: flex;
+  padding-bottom: 120px;
+  padding-top: 72px;
+  gap: 24px;
+}
+
+.portfolio-border {
+  border: 1px solid #e7e9fc;
+  border-top: 0;
+  margin-bottom: 24px;
+}
+
+.prtfl-brdr {
+  border: 1px solid #e7e9fc;
+  border-top: 0;
+  margin-bottom: 120px;
+}
+
+.persone-photo {
+  justify-content: center;
+}
+
+.main-persone.list {
+  gap: 24px;
+  display: flex;
+  padding-bottom: 120px;
+  text-align: center;
+}
+
+.persone-border {
+  background: #ffffff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* Футер */
@@ -219,6 +354,7 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  padding-top: 101.5px;
 }
 
 .footer-logo-studio {
@@ -243,4 +379,12 @@ ul {
 }
 .footer-text {
   color: #e7e9fc;
+  width: 264px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  margin-right: 1020px;
+  margin-top: 17.5px;
+  padding-bottom: 100px;
 }
