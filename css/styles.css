@@ -1,3 +1,28 @@
+/* ----------------------------------Службові селектори -----------------------------*/
+:root {
+  --primary-brand-color: #4d5ae5;
+
+  --pressed-state-color: #404bbf;
+
+  --dark-color: #2e2f42;
+
+  --sucsess-color: #31d0aa;
+
+  --text-color: #434455;
+
+  --subtle-text: #8e8f99;
+
+  --accent-color: #e7e9fc;
+
+  --light-color: #f4f4fd;
+
+  --modal-overlay-color: #2e2f42;
+
+  --hero-background-color: #2e2f42;
+
+  --white-color: #ffffff;
+}
+
 p,
 h1,
 h2,
@@ -16,8 +41,8 @@ button {
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #434455;
-  background-color: #ffffff;
+  color: var(--text-color);
+  background-color: var(--white-color);
   letter-spacing: 0.02em;
 }
 
@@ -29,7 +54,8 @@ img {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .link {
@@ -44,7 +70,7 @@ ul {
 
 .header {
   list-style: none;
-  border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid var(--accent-color);
 }
 
 .header-cntnr {
@@ -63,14 +89,14 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--dark-color);
   margin-top: 24px;
   margin-bottom: 24px;
 }
 
 .header-studio .link:hover,
 .header-studio .link:focus {
-  color: #404bbf;
+  color: var(--pressed-state-color);
 }
 
 .hdr.list {
@@ -84,13 +110,13 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--text-color);
   text-decoration: none;
 }
 
 .address .link:hover,
 .address .link:focus {
-  color: #404bbf;
+  color: var(--pressed-state-color);
 }
 
 .address.list {
@@ -104,33 +130,27 @@ ul {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: var(--primary-brand-color);
 }
 
 .header-logo span {
   font-size: 18px;
   line-height: 1.17;
-  color: #2e2f42;
+  color: var(--modal-overlay-color);
   margin-right: 76px;
 }
 
 /* Головне меню */
 
-.heading {
-  background: #2e2f42;
-}
+/* ------------------------------------------------- 1 секція ------------------------------------------------- */
 
-.heading-baner {
-  font-weight: 700;
-  text-align: center;
-  font-size: 56px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #ffffff;
+.heading {
+  background: var(--modal-overlay-color);
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .heading-caption {
@@ -138,83 +158,67 @@ ul {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--white-color);
   width: 496px;
-  padding-top: 188px;
   margin: 0 auto;
   margin-bottom: 48px;
+  text-align: center;
 }
 
 .heading-btn {
-  display: inline-block;
   border-radius: 4px;
   padding: 16px 32px;
-  background: #4d5ae5;
-  color: #ffffff;
+  background: var(--primary-brand-color);
+  color: var(--white-color);
   font-weight: 500;
   cursor: pointer;
+  display: flex;
+  margin: 0 auto;
   line-height: 1.5;
   letter-spacing: 0.04em;
   font-size: 16px;
-  border: 1px;
-  margin: 0 auto;
+  border: none;
   min-width: 169px;
   height: 56px;
-  margin-bottom: 188px;
 }
 
 .heading-btn:hover,
 .heading-btn:focus {
-  background: #404bbf;
+  background: var(--pressed-state-color);
 }
 
-.hero .list {
+/*--------------------------------------------------- 2 секція --------------------------------------------- */
+.calc {
+  width: calc(100% / 4 - 24px);
+}
+
+.hero {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.holder.list {
   display: block;
   display: flex;
   gap: 24px;
 }
 
-.aside-btn {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  cursor: pointer;
-  padding: 12px 24px;
-  background: #f4f4fd;
-  border: 1px solid #e7e9fc;
-  border-radius: 4px;
-  color: #4d5ae5;
-  margin-top: 96px;
-  margin-bottom: 84px;
-}
-
-.section.list {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-}
-
-.aside-btn:hover,
-.aside-btn:focus {
-  background: #404bbf;
-  color: #ffffff;
-}
-
-.hero-heading {
+.holder-heading {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
-  padding-top: 120px;
+  color: var(--dark-color);
   margin-bottom: 8px;
 }
 
-.hero-paragraph {
+.holder-paragraph {
   line-height: 1.5;
   width: 264px;
+}
+
+/*------------------------------------------------------ 3 секція -------------------------------------------*/
+.page {
   padding-bottom: 120px;
 }
 
@@ -224,74 +228,8 @@ ul {
   line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--modal-overlay-color);
   height: 40px;
-}
-
-.section-background {
-  background: #f4f4fd;
-}
-
-.subtitle {
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: #2e2f42;
-  margin-bottom: 72px;
-  padding-top: 120px;
-}
-
-.subtitle-paragraph {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #434455;
-  margin-top: 8px;
-  padding-bottom: 32px;
-}
-
-.subtitle-name {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  margin-top: 32px;
-}
-.main.list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-
-.main-list.link {
-  text-decoration: none;
-}
-
-.main-list-banking {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  padding-top: 32px;
-  margin-bottom: 8px;
-  margin-left: 16px;
-}
-
-.main-list-app {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-  padding-bottom: 32px;
-  margin-left: 16px;
 }
 
 .main-photo .list {
@@ -305,22 +243,51 @@ ul {
 }
 
 .main-photo.list {
+  margin-top: 72px;
   display: flex;
-  padding-bottom: 120px;
-  padding-top: 72px;
   gap: 24px;
 }
 
-.portfolio-border {
-  border: 1px solid #e7e9fc;
-  border-top: 0;
-  margin-bottom: 24px;
+/*------------------------------------------------------ 4 секція -------------------------------------------*/
+.sbttl-hp {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
-.prtfl-brdr {
-  border: 1px solid #e7e9fc;
-  border-top: 0;
-  margin-bottom: 120px;
+.section-background {
+  background: var(--light-color);
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--modal-overlay-color);
+  margin-bottom: 72px;
+}
+
+.subtitle-paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  margin-top: 8px;
+}
+
+.subtitle-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--modal-overlay-color);
 }
 
 .persone-photo {
@@ -330,61 +297,118 @@ ul {
 .main-persone.list {
   gap: 24px;
   display: flex;
-  padding-bottom: 120px;
   text-align: center;
 }
 
 .persone-border {
-  background: #ffffff;
+  background: var(--white-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
 
-/* Футер */
+/* -----------------------------------------------------------Футер --------------------------------------------------------------------------------*/
+.ftr {
+  width: 264px;
+}
+.footer {
+  background-color: var(--dark-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 
 .footer-logo {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 800;
+  font-family: "Raleway";
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
-  padding-top: 101.5px;
+  color: var(--primary-brand-color);
 }
 
-.footer-logo-studio {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #f4f4fd;
+.footer-logo span {
+  color: var(--light-color);
 }
 
-.footer-studio {
-  color: #f4f4fd;
-}
-
-.footer {
-  background: #2e2f42;
-}
 .footer-text {
-  color: #e7e9fc;
-  width: 264px;
+  color: var(--accent-color);
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
+  margin-top: 16px;
+}
+
+/* -----------------------------------------------------------------Studio Portfolio -------------------------------------------------*/
+
+.features {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.modal {
+  flex-basis: calc((100% - 48px) / 3);
+}
+
+.section.list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+.aside-btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  padding: 12px 24px;
+  background: var(--light-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  color: var(--primary-brand-color);
+}
+
+.aside-btn:hover,
+.aside-btn:focus {
+  background: var(--pressed-state-color);
+  color: var(--white-color);
+}
+
+.main.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.main-list.link {
+  text-decoration: none;
+}
+
+.main-list-banking {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-right: 1020px;
-  margin-top: 17.5px;
-  padding-bottom: 100px;
+  color: var(--hero-background-color);
+  margin-bottom: 8px;
+}
+
+.main-list-app {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+.portfolio-border {
+  border: 1px solid var(--accent-color);
+  border-top: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+}
+
+.prtfl-brdr {
+  border: 1px solid var(--accent-color);
+  border-top: none;
 }
