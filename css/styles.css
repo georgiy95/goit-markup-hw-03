@@ -90,8 +90,8 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--dark-color);
-  margin-top: 24px;
-  margin-bottom: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-studio .link:hover,
@@ -124,6 +124,10 @@ ul {
   gap: 24px;
 }
 
+.header-logo.link {
+  padding-right: 76px;
+}
+
 .header-logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -136,11 +140,8 @@ ul {
   color: var(--primary-brand-color);
 }
 
-.header-logo span {
-  font-size: 18px;
-  line-height: 1.17;
+.logo-studio {
   color: var(--modal-overlay-color);
-  margin-right: 76px;
 }
 
 /* Головне меню */
@@ -325,7 +326,7 @@ ul {
   color: var(--primary-brand-color);
 }
 
-.footer-logo span {
+.ftr-logo {
   color: var(--light-color);
 }
 
@@ -344,9 +345,9 @@ ul {
   padding-bottom: 120px;
 }
 
-.modal {
+/* .features {
   flex-basis: calc((100% - 48px) / 3);
-}
+} */
 
 .section.list {
   display: flex;
